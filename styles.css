@@ -1,3 +1,10 @@
 #letter {
     font-size: 500px;
 }
+.targetKey {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: red;
+    font-size: 100px;
+
+}

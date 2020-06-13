@@ -89,7 +89,16 @@ const askQuestion = () => {
   let promptDiv = document.getElementById("prompt");
   let letterDiv = document.getElementById("letter");
 
-  const targetKey = Math.floor((Math.random()*35)) + 65;
+  // 48-57
+  // 65-90
+
+  let targetKey = Math.floor((Math.random()*36));
+  if (targetKey < 10) {
+    targetKey += 48;
+  } else {
+    targetKey += 65 - 10;
+  }
+
   console.log(targetKey);
   let keyToPress = String.fromCharCode(targetKey);
 
